@@ -3,7 +3,7 @@
 STATUSFOLDER=/root/.replication_status						# It will store files to track when last error notification been sent
 REPLICATION_ERROR_STATUS_DELAY=3600						# Delay between error notifications
 
-IP=`ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'`	# Server IP
+IP=`/sbin/ifconfig | /bin/sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'`	# Server IP
 
 DEBUG=0										# Will output debugging messages if 1
 
